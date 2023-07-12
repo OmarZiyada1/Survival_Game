@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <script type="text/javascript" src="./lib/phaser.min.3.60.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
+  </head>
+  <style media="screen" type="text/css">
+    *, html, body {
+      margin: 0px;
+      padding: 0px;
+      overflow: hidden;
+    }
+
+    @font-face {
+        font-family: 'font';
+        src: url('assets/font/sm-webfont.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        outline: #000000;
+        
+      }
+
+      .fontload{
+        visibility:hidden;
+        position: absolute;
+        left: -9999px;
+        text-shadow: -3px 2px 9px #000000;
+      }
+  </style>
+
+  <body>
+    <div id="game"></div>
+    <div class="fontload" style="font-family: 'font';">.</div>
+
+  </body>
+</html>
